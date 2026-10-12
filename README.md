@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cheerio Guide — In-Product AI Setup Copilot 🪔
 
 > **A polished, interactive prototype designed for non-technical business owners using Cheerio AI.**  
@@ -178,3 +179,6 @@ vercel --prod
 - [x] **Zero errors**: Verified with clean `npm run build` output and zero browser runtime errors.
 - [x] **Real copy only**: Believable product copy, authentic Diwali dates, customer numbers, and realistic Meta error codes.
 - [x] **Responsive**: Seamless experience from 390px mobile view up to 1440px desktop screens.
+=======
+# Cheerio-Companion
+>>>>>>> cec4773ce4fefc2525c1df2451149c91bd5c3eb9
