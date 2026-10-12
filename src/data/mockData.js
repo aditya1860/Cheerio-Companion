@@ -1,0 +1,263 @@
+export const currentUser = {
+  name: 'Riya Sharma',
+  email: 'riya@glowbyria.in',
+  brand: 'Glow by Riya',
+  phone: '+91 98765 43210',
+  plan: 'Growth',
+  whatsappNumber: '+91 98765 43210',
+  whatsappVerified: false,
+  avatar: 'RS',
+};
+
+export const templates = [
+  {
+    id: 'diwali_offer_v1',
+    name: 'diwali_offer_v1',
+    category: 'UTILITY',
+    language: 'English',
+    status: 'REJECTED',
+    rejectionReason:
+      'Variable parameters not formatted correctly. Promotional content is not allowed in Utility category templates.',
+    rejectionCode: 'INVALID_FORMAT',
+    createdAt: '2026-10-08',
+    updatedAt: '2026-10-10',
+    originalBody:
+      'Hello {{1}}! 🎉🎉🎉 Your Diwali special offer is here! Get FLAT 30% OFF on all skincare products. Use code DIWALI30. Offer valid till 20th October 2026. Shop now: {{2}}. Limited stocks! Hurry up! 🛒✨🎆',
+    suggestedBody:
+      'Hi {{1}}, \n\nHappy Diwali from Glow by Riya! 🪔\n\nAs a thank-you to our valued customers, enjoy 30% off your next order. Use code DIWALI30 at checkout.\n\nShop here: {{2}}\n\nOffer valid till 20 Oct 2026.',
+    suggestedCategory: 'MARKETING',
+    whyItFixes:
+      'Meta rejects Utility templates with promotional offers. Changing the category to Marketing allows discount content. We also reduced emoji count (3+ in a row triggers spam flags) and softened the urgency language.',
+    headerText: 'Diwali Offer — Glow by Riya 🪔',
+    footerText: 'Reply STOP to unsubscribe',
+    buttons: [{ type: 'URL', text: 'Shop Now', url: 'https://glowbyriya.in/diwali' }],
+  },
+  {
+    id: 'order_confirmation_v2',
+    name: 'order_confirmation_v2',
+    category: 'UTILITY',
+    language: 'English',
+    status: 'APPROVED',
+    rejectionReason: null,
+    rejectionCode: null,
+    createdAt: '2026-09-15',
+    updatedAt: '2026-09-16',
+    originalBody:
+      'Hi {{1}}, your order #{{2}} has been confirmed! Expected delivery: {{3}}. Track here: {{4}}',
+    suggestedBody: null,
+    suggestedCategory: null,
+    whyItFixes: null,
+    headerText: 'Order Confirmed ✅',
+    footerText: 'Glow by Riya',
+    buttons: [{ type: 'URL', text: 'Track Order', url: 'https://glowbyriya.in/track' }],
+  },
+  {
+    id: 'welcome_new_customer',
+    name: 'welcome_new_customer',
+    category: 'MARKETING',
+    language: 'English',
+    status: 'PENDING',
+    rejectionReason: null,
+    rejectionCode: null,
+    createdAt: '2026-10-11',
+    updatedAt: '2026-10-11',
+    originalBody:
+      'Welcome to Glow by Riya, {{1}}! 🌿 We are so glad you are here. Explore our bestsellers and find your perfect skincare routine.',
+    suggestedBody: null,
+    suggestedCategory: null,
+    whyItFixes: null,
+    headerText: 'Welcome! 🌿',
+    footerText: 'Glow by Riya | Reply STOP to opt out',
+    buttons: [{ type: 'URL', text: 'Shop Bestsellers', url: 'https://glowbyriya.in/bestsellers' }],
+  },
+  {
+    id: 'cart_abandon_v1',
+    name: 'cart_abandon_v1',
+    category: 'MARKETING',
+    language: 'English',
+    status: 'APPROVED',
+    rejectionReason: null,
+    rejectionCode: null,
+    createdAt: '2026-09-20',
+    updatedAt: '2026-09-21',
+    originalBody:
+      'Hey {{1}}, you left something behind! 😊 Your cart is waiting. Complete your order and get free shipping on orders above ₹499.',
+    suggestedBody: null,
+    suggestedCategory: null,
+    whyItFixes: null,
+    headerText: 'Your cart is waiting 🛒',
+    footerText: 'Glow by Riya',
+    buttons: [{ type: 'URL', text: 'View Cart', url: 'https://glowbyriya.in/cart' }],
+  },
+  {
+    id: 'shipping_update_v1',
+    name: 'shipping_update_v1',
+    category: 'UTILITY',
+    language: 'English',
+    status: 'APPROVED',
+    rejectionReason: null,
+    rejectionCode: null,
+    createdAt: '2026-09-10',
+    updatedAt: '2026-09-10',
+    originalBody:
+      'Hi {{1}}, your order #{{2}} is out for delivery today! Expected by {{3}}. Call us at 1800-XXX-XXXX if you have questions.',
+    suggestedBody: null,
+    suggestedCategory: null,
+    whyItFixes: null,
+    headerText: 'Out for delivery 🚚',
+    footerText: 'Glow by Riya',
+    buttons: [],
+  },
+];
+
+export const helpTopics = [
+  {
+    id: 'wa-api',
+    icon: 'Smartphone',
+    title: 'WhatsApp API not connected',
+    description: 'Phone number not verified or API key missing',
+    color: '#0A7B6B',
+    count: '47 users helped this week',
+  },
+  {
+    id: 'template-rejected',
+    icon: 'XCircle',
+    title: 'Template rejected by Meta',
+    description: 'Fix category, formatting or content issues',
+    color: '#DC2626',
+    count: '31 users helped this week',
+  },
+  {
+    id: 'chatbot-flow',
+    icon: 'GitBranch',
+    title: 'Chatbot flow not triggering',
+    description: 'Keyword mismatch or flow not published',
+    color: '#7C3AED',
+    count: '28 users helped this week',
+  },
+  {
+    id: 'integration',
+    icon: 'Plug',
+    title: 'Integration setup issues',
+    description: 'Shopify, WooCommerce, Zapier connections',
+    color: '#0369A1',
+    count: '19 users helped this week',
+  },
+  {
+    id: 'campaign-delivery',
+    icon: 'AlertTriangle',
+    title: 'Campaign not delivered / credits',
+    description: 'Audience filters, opt-out lists, credit balance',
+    color: '#D97706',
+    count: '22 users helped this week',
+  },
+];
+
+export const nudges = [
+  {
+    id: 'whatsapp-verify',
+    type: 'warning',
+    message: 'Your WhatsApp number is not verified yet.',
+    cta: 'Verify now',
+    screen: '/integrations',
+  },
+  {
+    id: 'template-rejected',
+    type: 'error',
+    message: 'Template diwali_offer_v1 was rejected by Meta.',
+    cta: 'Fix with Guide',
+    screen: '/templates',
+  },
+  {
+    id: 'campaign-scheduled',
+    type: 'info',
+    message: 'Diwali campaign is scheduled. Template approval pending.',
+    cta: 'View campaign',
+    screen: '/campaigns',
+  },
+];
+
+export const adminStats = {
+  selfResolvedPct: 73,
+  escalatedPct: 18,
+  pendingPct: 9,
+  avgTimeToResolve: '4m 32s',
+  totalSessions: 1284,
+  thisWeek: 247,
+  topStuckTopics: [
+    { topic: 'Template rejected', count: 89, trend: 'up' },
+    { topic: 'WhatsApp not connected', count: 67, trend: 'down' },
+    { topic: 'Chatbot not triggering', count: 54, trend: 'stable' },
+    { topic: 'Campaign not delivered', count: 43, trend: 'up' },
+    { topic: 'Integration setup', count: 31, trend: 'down' },
+  ],
+  csat: 4.3,
+  handoffReasons: [
+    { reason: 'Low AI confidence', pct: 42 },
+    { reason: 'User requested human', pct: 31 },
+    { reason: 'Sensitive topic', pct: 17 },
+    { reason: 'Repeated failure', pct: 10 },
+  ],
+};
+
+export const agentHandoff = {
+  estimatedWait: '8 minutes',
+  agentName: 'Priya (Support)',
+  agentAvatar: 'PR',
+  ticketId: 'CHR-2026-4821',
+  contextSummary: {
+    user: 'Riya Sharma (riya@glowbyria.in)',
+    plan: 'Growth plan',
+    issue: 'Template diwali_offer_v1 rejected by Meta (INVALID_FORMAT)',
+    stepsTried: [
+      'Viewed rejection reason',
+      'Reviewed AI fix suggestion',
+      'Attempted resubmission',
+    ],
+    aiDiagnosis:
+      'Promotional content in Utility category + excessive emoji use. Suggested re-categorisation to Marketing.',
+  },
+};
+
+export const recentActivity = [
+  {
+    id: 1,
+    type: 'template_rejected',
+    title: 'Template diwali_offer_v1 rejected by Meta',
+    time: '2 hours ago',
+    icon: 'XCircle',
+    color: '#DC2626',
+  },
+  {
+    id: 2,
+    type: 'campaign_scheduled',
+    title: 'Diwali Flash Sale campaign scheduled for Oct 14',
+    time: '5 hours ago',
+    icon: 'Calendar',
+    color: '#0369A1',
+  },
+  {
+    id: 3,
+    type: 'contact_import',
+    title: '284 new contacts added from Shopify sync',
+    time: 'Yesterday',
+    icon: 'Users',
+    color: '#16A34A',
+  },
+  {
+    id: 4,
+    type: 'template_approved',
+    title: 'cart_abandon_v1 approved by Meta',
+    time: '2 days ago',
+    icon: 'CheckCircle',
+    color: '#16A34A',
+  },
+  {
+    id: 5,
+    type: 'flow_updated',
+    title: 'Welcome flow updated and published',
+    time: '3 days ago',
+    icon: 'GitBranch',
+    color: '#7C3AED',
+  },
+];
